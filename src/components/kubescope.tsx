@@ -57,6 +57,7 @@ import {
 } from "./ui/dialog";
 import { Topology } from "./topology";
 import { Inspector } from "./inspector";
+import { WorkspaceSwitcher } from "./workspace-switcher";
 import {
   ControlPlane,
   NetworkingToolbar,
@@ -464,6 +465,7 @@ export function KubeScope() {
           </span>
           <span className="brand-beta">BETA</span>
         </a>
+        <WorkspaceSwitcher active="kubernetes" />
         <button
           className="cluster-switcher"
           onClick={() => {
