@@ -676,7 +676,6 @@ export function Topology({ mode }: { mode: Layout }) {
         fitViewOptions={{ padding: 0.12 }}
         minZoom={0.3}
         maxZoom={1.6}
-        proOptions={{ hideAttribution: true }}
         nodesConnectable={false}
         deleteKeyCode={null}
         colorMode="dark"
