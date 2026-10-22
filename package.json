@@ -6,7 +6,7 @@
     "dev": "next dev --hostname 0.0.0.0",
     "build": "next build",
     "start": "serve out --listen tcp://0.0.0.0:3000",
-    "test": "tsx --test src/lib/simulation/engine.test.ts",
+    "test": "tsx --test src/lib/simulation/engine.test.ts src/lib/dynamo/model.test.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

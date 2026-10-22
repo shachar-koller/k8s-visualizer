@@ -3696,3 +3696,34 @@ form label > select {
     display: none;
   }
 }
+
+/* Shared entry points to the two learning workspaces. */
+.workspace-switcher {
+  display: flex;
+  gap: 3px;
+  padding: 3px;
+  margin-bottom: 12px;
+  border: 1px solid #323b4d;
+  border-radius: 6px;
+  background: #141923;
+}
+.workspace-switcher a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex: 1;
+  padding: 9px 3px;
+  border-radius: 4px;
+  font-size: 10px;
+  color: #a1adc1;
+}
+.workspace-switcher a[aria-current] {
+  color: #c7d9ff;
+  background: #25324b;
+}
+.workspace-switcher a:last-child[aria-current] {
+  color: #f1cf91;
+  background: #3a3122;
+}
+.workspace-switcher a:hover { color: #f0d39e; }
